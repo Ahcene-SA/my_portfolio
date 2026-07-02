@@ -126,7 +126,7 @@ const translations = {
         "section.education.title": "Mon parcours académique",
         "section.education.subtitle": "Où j'ai étudié et ce que j'ai appris.",
         "education.bachelor.date": "Mars 2026 — Juillet 2026",
-        "education.bachelor.title": "Bachelor informatique",
+        "education.bachelor.title": "Première année Bachelor informatique",
         "education.bachelor.place": "ECE Paris, France",
         "education.bachelor.text": "Première année de Bachelor informatique, avec des bases en programmation, réseaux et sécurité des systèmes.",
         "education.igee.date": "Septembre 2025 — Décembre 2025",
