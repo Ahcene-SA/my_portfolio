@@ -89,13 +89,6 @@ const translations = {
         "contact.email.title": "Email",
         "contact.location.title": "Location",
         "contact.location.value": "Aubervilliers, France",
-        "contact.form.name": "Name",
-        "contact.form.email": "Email",
-        "contact.form.subject": "Subject",
-        "contact.form.message": "Message",
-        "contact.form.send": "Send Message",
-        "contact.form.success": "Message sent successfully!",
-        "contact.form.error": "Oops! Something went wrong. Please try again.",
 
         "footer.text": "Built with HTML, CSS, and JavaScript. Designed to grow with my journey.",
         "footer.copyright": "© 2026 Ahcene Sahki. All rights reserved."
@@ -177,13 +170,6 @@ const translations = {
         "contact.email.title": "Email",
         "contact.location.title": "Localisation",
         "contact.location.value": "Aubervilliers, France",
-        "contact.form.name": "Nom",
-        "contact.form.email": "Email",
-        "contact.form.subject": "Sujet",
-        "contact.form.message": "Message",
-        "contact.form.send": "Envoyer",
-        "contact.form.success": "Message envoyé avec succès !",
-        "contact.form.error": "Oups ! Une erreur s'est produite. Veuillez réessayer.",
 
         "footer.text": "Construit avec HTML, CSS et JavaScript. Conçu pour évoluer avec mon parcours.",
         "footer.copyright": "© 2026 Ahcene Sahki. Tous droits réservés."
@@ -309,7 +295,7 @@ function initScrollSpy() {
 // ========================
 function initRevealAnimations() {
     const revealElements = document.querySelectorAll(
-        '.section__header, .about__card, .timeline__item, .certificate, .skills__category, .project-card, .contact__card, .contact__form'
+        '.section__header, .about__card, .timeline__item, .certificate, .skills__category, .project-card, .contact__card, .contact__link'
     );
 
     revealElements.forEach(el => el.classList.add('reveal'));
@@ -327,45 +313,6 @@ function initRevealAnimations() {
     });
 
     revealElements.forEach(el => observer.observe(el));
-}
-
-// ========================
-// Contact form
-// ========================
-function initContactForm() {
-    const form = document.getElementById('contact-form');
-    const statusEl = document.getElementById('form-status');
-
-    if (!form) return;
-
-    form.addEventListener('submit', (e) => {
-        e.preventDefault();
-
-        const formData = new FormData(form);
-        const data = Object.fromEntries(formData.entries());
-
-        // Simple validation
-        if (!data.name || !data.email || !data.subject || !data.message) {
-            statusEl.textContent = translations[currentLang]['contact.form.error'];
-            statusEl.className = 'form__status error';
-            return;
-        }
-
-        // Simulate sending (no backend yet)
-        statusEl.textContent = '';
-        statusEl.className = 'form__status';
-
-        setTimeout(() => {
-            statusEl.textContent = translations[currentLang]['contact.form.success'];
-            statusEl.className = 'form__status success';
-            form.reset();
-
-            setTimeout(() => {
-                statusEl.textContent = '';
-                statusEl.className = 'form__status';
-            }, 5000);
-        }, 1000);
-    });
 }
 
 // ========================
@@ -433,6 +380,5 @@ document.addEventListener('DOMContentLoaded', () => {
     initMobileNav();
     initScrollSpy();
     initRevealAnimations();
-    initContactForm();
     initTypewriter();
 });
