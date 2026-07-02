@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of a Bachelor informatique student. Projects, skills, education, and contact.">
+    <meta name="author" content="Ahcene Sahki">
+    <title data-i18n="meta.title">Portfolio | Bachelor informatique Student</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#home" class="nav__logo">
+                <span class="nav__logo-bracket">&lt;</span>
+                <span data-i18n="nav.logo">Portfolio</span>
+                <span class="nav__logo-bracket">/&gt;</span>
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="#home" class="nav__link" data-i18n="nav.home">Home</a></li>
+                    <li><a href="#about" class="nav__link" data-i18n="nav.about">About</a></li>
+                    <li><a href="#education" class="nav__link" data-i18n="nav.education">Education</a></li>
+                    <li><a href="#skills" class="nav__link" data-i18n="nav.skills">Skills</a></li>
+                    <li><a href="#projects" class="nav__link" data-i18n="nav.projects">Projects</a></li>
+                    <li><a href="#contact" class="nav__link" data-i18n="nav.contact">Contact</a></li>
+                </ul>
+
+                <div class="nav__actions">
+                    <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">
+                        <span class="lang-toggle__text">EN</span>
+                        <i class="fas fa-language"></i>
+                    </button>
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </div>
+
+                <button class="nav__close" id="nav-close" aria-label="Close menu">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+
+            <button class="nav__toggle" id="nav-toggle" aria-label="Open menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero section" id="home">
+            <div class="hero__background">
+                <div class="hero__shape hero__shape--1"></div>
+                <div class="hero__shape hero__shape--2"></div>
+                <div class="hero__shape hero__shape--3"></div>
+            </div>
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <p class="hero__greeting" data-i18n="hero.greeting">Hello, I'm</p>
+                    <h1 class="hero__title">
+                        <span class="hero__name" data-i18n="hero.name">Ahcene Sahki</span>
+                    </h1>
+                    <h2 class="hero__subtitle">
+                        <span class="hero__role" data-i18n="hero.role">Bachelor informatique Student</span>
+                        <span class="hero__cursor">|</span>
+                    </h2>
+                    <p class="hero__description" data-i18n="hero.description">
+                        Passionate about AI, cybersecurity, and networking. Computer Science student at ECE Paris, building projects that solve real problems.
+                    </p>
+                    <div class="hero__cta">
+                        <a href="#projects" class="btn btn--primary" data-i18n="hero.cta.projects">View My Work</a>
+                        <a href="#contact" class="btn btn--outline" data-i18n="hero.cta.contact">Get In Touch</a>
+                    </div>
+                    <div class="hero__social">
+                        <a href="https://github.com/Ahcene-SA" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/ahcene-sahki-47570b383/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:ahcenesahki0@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="hero__image-wrapper">
+                    <div class="hero__image">
+                        <img src="assets/profile-placeholder.svg" alt="Profile photo" id="hero-img">
+                        <div class="hero__image-ring hero__image-ring--1"></div>
+                        <div class="hero__image-ring hero__image-ring--2"></div>
+                    </div>
+                </div>
+            </div>
+            <a href="#about" class="hero__scroll" aria-label="Scroll down">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__label" data-i18n="section.about.label">About Me</span>
+                    <h2 class="section__title" data-i18n="section.about.title">Who I Am</h2>
+                    <p class="section__subtitle" data-i18n="section.about.subtitle">A little bit about my journey and what drives me.</p>
+                </div>
+
+                <div class="about__grid">
+                    <div class="about__card about__card--main">
+                        <div class="about__icon"><i class="fas fa-user-graduate"></i></div>
+                        <h3 data-i18n="about.student.title">Student & Learner</h3>
+                        <p data-i18n="about.student.text">
+                            My goal is to become a cybersecurity specialist, protecting systems and networks from evolving threats. I'm building toward this through hands-on projects, networking coursework, and a growing interest in AI-driven security.
+                        </p>
+                    </div>
+                    <div class="about__card">
+                        <div class="about__icon"><i class="fas fa-code"></i></div>
+                        <h3 data-i18n="about.developer.title">Developer</h3>
+                        <p data-i18n="about.developer.text">
+                            I like turning ideas into working applications. From front-end interfaces to back-end logic, I am always curious about how things work under the hood.
+                        </p>
+                    </div>
+                    <div class="about__card">
+                        <div class="about__icon"><i class="fas fa-lightbulb"></i></div>
+                        <h3 data-i18n="about.problem.title">Problem Solver</h3>
+                        <p data-i18n="about.problem.text">
+                            I approach challenges with patience and creativity. Whether it's debugging code or designing a solution, I love the process of figuring things out.
+                        </p>
+                    </div>
+                    <div class="about__card">
+                        <div class="about__icon"><i class="fas fa-rocket"></i></div>
+                        <h3 data-i18n="about.goal.title">Future Goals</h3>
+                        <p data-i18n="about.goal.text">
+                            My goal is to become a cybersecurity specialist, protecting systems and networks from evolving threats. I'm building toward this through hands-on projects, networking coursework, and a growing interest in AI-driven security.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="education section" id="education">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__label" data-i18n="section.education.label">Education</span>
+                    <h2 class="section__title" data-i18n="section.education.title">My Academic Path</h2>
+                    <p class="section__subtitle" data-i18n="section.education.subtitle">Where I studied and what I learned.</p>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline__item">
+                        <div class="timeline__marker">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="timeline__content">
+                            <span class="timeline__date" data-i18n="education.bachelor.date">March 2026 — July 2026</span>
+                            <h3 data-i18n="education.bachelor.title">Bachelor in Computer Science</h3>
+                            <span class="timeline__place" data-i18n="education.bachelor.place">ECE Paris, France</span>
+                            <p data-i18n="education.bachelor.text">
+                                First year of Bachelor in Computer Science, building foundations in programming, networks, and system security.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline__item">
+                        <div class="timeline__marker">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="timeline__content">
+                            <span class="timeline__date" data-i18n="education.igee.date">September 2025 — December 2025</span>
+                            <h3 data-i18n="education.igee.title">Semester in Electrical &amp; Electronic Engineering</h3>
+                            <span class="timeline__place" data-i18n="education.igee.place">IGEE (ex: INELEC), Boumerdès, Algeria</span>
+                            <p data-i18n="education.igee.text">
+                                One-semester program covering electrical engineering, electronics, and practical project work.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline__item">
+                        <div class="timeline__marker">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <div class="timeline__content">
+                            <span class="timeline__date" data-i18n="education.highschool.date">2024 — 2025</span>
+                            <h3 data-i18n="education.highschool.title">Baccalauréat in Electrical Engineering</h3>
+                            <span class="timeline__place" data-i18n="education.highschool.place">Hassi Messaoud, Algeria</span>
+                            <p data-i18n="education.highschool.text">
+                                Graduated with highest honors (17.34/20), ranked first in the wilaya.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certificates">
+                    <h3 class="certificates__title" data-i18n="education.certificates.title">Certifications & Courses</h3>
+                    <div class="certificates__grid">
+                        <div class="certificate">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span data-i18n="education.certificates.item1">Baccalauréat in Electrical Engineering — Highest Honors (17.34/20)</span>
+                        </div>
+                        <div class="certificate">
+                            <i class="fas fa-certificate"></i>
+                            <span data-i18n="education.certificates.item2">Tech For All — Liora Learn</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills section" id="skills">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__label" data-i18n="section.skills.label">Skills</span>
+                    <h2 class="section__title" data-i18n="section.skills.title">What I Work With</h2>
+                    <p class="section__subtitle" data-i18n="section.skills.subtitle">Technologies and tools I use to build projects.</p>
+                </div>
+
+                <div class="skills__grid">
+                    <div class="skills__category">
+                        <h3 class="skills__category-title"><i class="fas fa-code"></i> <span data-i18n="skills.programming.title">Programming</span></h3>
+                        <div class="skills__list">
+                            <div class="skill"><i class="fas fa-code"></i> C</div>
+                            <div class="skill"><i class="fab fa-php"></i> PHP</div>
+                            <div class="skill"><i class="fab fa-js"></i> JavaScript</div>
+                            <div class="skill"><i class="fas fa-database"></i> MySQL</div>
+                        </div>
+                    </div>
+                    <div class="skills__category">
+                        <h3 class="skills__category-title"><i class="fas fa-laptop-code"></i> <span data-i18n="skills.web.title">Web Development</span></h3>
+                        <div class="skills__list">
+                            <div class="skill"><i class="fab fa-html5"></i> HTML</div>
+                            <div class="skill"><i class="fab fa-css3-alt"></i> CSS</div>
+                            <div class="skill"><i class="fas fa-server"></i> Full-Stack Basics</div>
+                            <div class="skill"><i class="fas fa-mobile-alt"></i> Responsive Design</div>
+                        </div>
+                    </div>
+                    <div class="skills__category">
+                        <h3 class="skills__category-title"><i class="fas fa-network-wired"></i> <span data-i18n="skills.systems.title">Systems &amp; Networking</span></h3>
+                        <div class="skills__list">
+                            <div class="skill"><i class="fab fa-linux"></i> Linux</div>
+                            <div class="skill"><i class="fas fa-network-wired"></i> Networking</div>
+                            <div class="skill"><i class="fas fa-shield-alt"></i> System Security Basics</div>
+                            <div class="skill"><i class="fas fa-terminal"></i> Command Line</div>
+                        </div>
+                    </div>
+                    <div class="skills__category">
+                        <h3 class="skills__category-title"><i class="fas fa-brain"></i> <span data-i18n="skills.soft.title">Soft Skills</span></h3>
+                        <div class="skills__list">
+                            <div class="skill"><i class="fas fa-users"></i> <span data-i18n="skills.soft.teamwork">Teamwork</span></div>
+                            <div class="skill"><i class="fas fa-search"></i> <span data-i18n="skills.soft.problem">Problem Solving</span></div>
+                            <div class="skill"><i class="fas fa-clock"></i> <span data-i18n="skills.soft.time">Time Management</span></div>
+                            <div class="skill"><i class="fas fa-comments"></i> <span data-i18n="skills.soft.communication">Communication</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects section" id="projects">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__label" data-i18n="section.projects.label">Projects</span>
+                    <h2 class="section__title" data-i18n="section.projects.title">Things I've Built</h2>
+                    <p class="section__subtitle" data-i18n="section.projects.subtitle">A selection of academic and personal projects.</p>
+                </div>
+
+                <div class="projects__grid">
+                    <article class="project-card">
+                        <div class="project-card__image">
+                            <div class="project-card__placeholder">
+                                <i class="fas fa-question-circle"></i>
+                            </div>
+                        </div>
+                        <div class="project-card__body">
+                            <h3 data-i18n="projects.quizzone.title">QuizZone</h3>
+                            <p data-i18n="projects.quizzone.text">
+                                A dark-themed quiz platform built for ECE Paris students, with live search and autocomplete on the home page, a sidebar showing quiz history, and a dedicated results tab to track performance over time. Built with PHP and MySQL.
+                            </p>
+                            <div class="project-card__tags">
+                                <span>PHP</span><span>MySQL</span><span>HTML/CSS</span><span>JavaScript</span>
+                            </div>
+                            <div class="project-card__links">
+                                <a href="https://quizzone.fr" target="_blank" rel="noopener" class="project-card__link"><i class="fas fa-external-link-alt"></i> <span data-i18n="projects.live">Live</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-card__image">
+                            <div class="project-card__placeholder">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                        </div>
+                        <div class="project-card__body">
+                            <h3 data-i18n="projects.studenthub.title">Student HUB</h3>
+                            <p data-i18n="projects.studenthub.text">
+                                A multi-page platform for ECE Paris students covering housing listings, internships and apprenticeships, campus events, mentoring, and student deals. Built with HTML/CSS/JS on the frontend and PHP/MySQL on the backend, deployed on an OVH VPS via Docker.
+                            </p>
+                            <div class="project-card__tags">
+                                <span>HTML/CSS/JS</span><span>PHP</span><span>MySQL</span><span>Docker</span><span>OVH VPS</span>
+                            </div>
+                            <div class="project-card__links">
+                                <a href="https://studenthub.cloud" target="_blank" rel="noopener" class="project-card__link"><i class="fas fa-external-link-alt"></i> <span data-i18n="projects.live">Live</span></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="section__header">
+                    <span class="section__label" data-i18n="section.contact.label">Contact</span>
+                    <h2 class="section__title" data-i18n="section.contact.title">Let's Talk</h2>
+                    <p class="section__subtitle" data-i18n="section.contact.subtitle">Have a question or want to work together? Reach out.</p>
+                </div>
+
+                <div class="contact__grid">
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4 data-i18n="contact.email.title">Email</h4>
+                                <a href="mailto:ahcenesahki0@gmail.com">ahcenesahki0@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact__card">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4 data-i18n="contact.location.title">Location</h4>
+                                <span data-i18n="contact.location.value">Aubervilliers, France</span>
+                            </div>
+                        </div>
+                        <div class="contact__social">
+                            <a href="https://github.com/Ahcene-SA" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/ahcene-sahki-47570b383/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+
+                    <form class="contact__form" id="contact-form">
+                        <div class="form__group">
+                            <label for="name" data-i18n="contact.form.name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="email" data-i18n="contact.form.email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="subject" data-i18n="contact.form.subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form__group">
+                            <label for="message" data-i18n="contact.form.message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary btn--full" data-i18n="contact.form.send">Send Message</button>
+                        <p class="form__status" id="form-status"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <p class="footer__logo">
+                    <span class="nav__logo-bracket">&lt;</span>
+                    <span data-i18n="nav.logo">Portfolio</span>
+                    <span class="nav__logo-bracket">/&gt;</span>
+                </p>
+                <p class="footer__text" data-i18n="footer.text">
+                    Built with HTML, CSS, and JavaScript. Designed to grow with my journey.
+                </p>
+                <div class="footer__social">
+                    <a href="https://github.com/Ahcene-SA" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/ahcene-sahki-47570b383/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:ahcenesahki0@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p data-i18n="footer.copyright">© 2026 Ahcene Sahki. All rights reserved.</p>
+                <a href="#home" class="footer__top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
