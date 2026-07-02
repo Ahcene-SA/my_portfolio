@@ -45,7 +45,7 @@ const translations = {
         "section.education.title": "My Academic Path",
         "section.education.subtitle": "Where I studied and what I learned.",
         "education.bachelor.date": "March 2026 — July 2026",
-        "education.bachelor.title": "Bachelor in Computer Science",
+        "education.bachelor.title": "First Year Bachelor in Computer Science",
         "education.bachelor.place": "ECE Paris, France",
         "education.bachelor.text": "First year of Bachelor in Computer Science, building foundations in programming, networks, and system security.",
         "education.igee.date": "September 2025 — December 2025",
